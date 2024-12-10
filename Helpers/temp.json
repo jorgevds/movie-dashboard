@@ -1,0 +1,24 @@
+[
+  {
+    "Id": "ad379b9b-257e-445c-a9ea-10da301f2386",
+    "Slug": "toy-story-1995",
+    "Title": "Toy Story",
+    "YearOfRelease": 1995,
+,
+    "Links": [
+      "https://www.imdb.com/title/tt114709",
+      "https://www.themoviedb.org/movie/862"
+    ]
+  },
+  {
+    "Id": "578be646-61a6-4bd3-b824-e4556b51b294",
+    "Slug": "jumanji-1995",
+    "Title": "Jumanji",
+    "YearOfRelease": 1995,
+,
+    "Links": [
+      "https://www.imdb.com/title/tt113497",
+      "https://www.themoviedb.org/movie/8844"
+    ]
+  }
+]
