@@ -6,8 +6,10 @@ using Movies.Api.Mapping;
 using Movies.Application;
 using Movies.Application.Database;
 
+/* rest-api-course-final-master/src/Movies.Api/bin/Debug/net7.0 */
 var builder = WebApplication.CreateBuilder(args);
 var config = builder.Configuration;
+var dbstring = config["Database:ConnectionString"];
 
 // Add services to the container.
 builder

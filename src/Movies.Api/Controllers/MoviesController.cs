@@ -12,6 +12,7 @@ namespace Movies.Api.Controllers;
 public class MoviesController : ControllerBase {
     private readonly IMovieService _movieService;
 
+    // zero-to-hero-rest/rest-api-course-final-master/src/Movies.Api/bin/Debug/net7.0/Movies.Api.dll
     public MoviesController(IMovieService movieService) {
         _movieService = movieService;
     }
@@ -91,6 +92,7 @@ public class MoviesController : ControllerBase {
         [FromQuery] GetAllMoviesRequest request,
         CancellationToken token
     ) {
+        Console.WriteLine("Getting all movies...");
         Guid? userId = HttpContext.GetUserId();
         var options = request.MapToOptions().WithUserId(userId);
         var movies = await _movieService.GetAllAsync(options, token);
