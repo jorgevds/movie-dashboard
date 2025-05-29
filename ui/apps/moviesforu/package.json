@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "moviesforu",
   "version": "0.1.0",
   "type": "module",
   "private": true,
@@ -11,6 +11,8 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@repo/layouts": "^0.0.0",
+    "@repo/tailwind-config": "*",
     "@repo/ui": "*",
     "next": "^15.3.0",
     "react": "^19.1.0",
@@ -22,7 +24,11 @@
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
+    "autoprefixer": "^10.4.20",
     "eslint": "^9.27.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.5",
+    "tw-animate-css": "^1.3.1",
     "typescript": "5.8.2"
   }
 }
