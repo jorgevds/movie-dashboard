@@ -23,21 +23,19 @@ import { NavDocuments } from "../components/nav-documents";
 import { NavMain } from "../components/nav-main";
 import { NavSecondary } from "../components/nav-secondary";
 import { NavUser } from "../components/nav-user";
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarFooter,
-  SidebarHeader,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-} from "../components/ui/sidebar";
+import { Sidebar } from "./ui/sidebar/sidebar";
+import { SidebarHeader } from "./ui/sidebar/sidebar-header";
+import { SidebarMenu } from "./ui/sidebar/sidebar-menu";
+import { SidebarMenuItem } from "./ui/sidebar/sidebar-menu-item";
+import { SidebarMenuButton } from "./ui/sidebar/sidebar-menu-button";
+import { SidebarContent } from "./ui/sidebar/sidebar-content";
+import { SidebarFooter } from "./ui/sidebar/sidebar-footer";
 
 const data = {
   user: {
     name: "shadcn",
     email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "",
   },
   navMain: [
     {
@@ -168,11 +166,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
+
       <SidebarContent>
         <NavMain items={data.navMain} />
         <NavDocuments items={data.documents} />
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
+
       <SidebarFooter>
         <NavUser user={data.user} />
       </SidebarFooter>

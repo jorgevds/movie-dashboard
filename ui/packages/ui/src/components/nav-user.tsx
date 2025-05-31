@@ -20,12 +20,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@repo/ui/components/ui/dropdown-menu";
-import {
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  useSidebar,
-} from "@repo/ui/components/ui/sidebar";
+import { useSidebar } from "./ui/sidebar/useSidebar";
+import { SidebarMenu } from "./ui/sidebar/sidebar-menu";
+import { SidebarMenuItem } from "./ui/sidebar/sidebar-menu-item";
+import { SidebarMenuButton } from "./ui/sidebar/sidebar-menu-button";
 
 export function NavUser({
   user,
