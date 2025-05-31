@@ -2,14 +2,11 @@
 
 import * as React from "react";
 import { type Icon } from "@tabler/icons-react";
-
-import {
-  SidebarGroup,
-  SidebarGroupContent,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-} from "@repo/ui/components/ui/sidebar";
+import { SidebarGroup } from "./ui/sidebar/sidebar-group";
+import { SidebarGroupContent } from "./ui/sidebar/sidebar-group-content";
+import { SidebarMenu } from "./ui/sidebar/sidebar-menu";
+import { SidebarMenuItem } from "./ui/sidebar/sidebar-menu-item";
+import { SidebarMenuButton } from "./ui/sidebar/sidebar-menu-button";
 
 export function NavSecondary({
   items,

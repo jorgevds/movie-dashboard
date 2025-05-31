@@ -1,6 +1,4 @@
-import { IconTrendingDown, IconTrendingUp } from "@tabler/icons-react"
-
-import { Badge } from "@/components/ui/badge"
+import { IconTrendingDown, IconTrendingUp } from "@tabler/icons-react";
 import {
   Card,
   CardAction,
@@ -8,7 +6,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "./ui/card";
+import { Badge } from "./ui/badge";
 
 export function SectionCards() {
   return (
@@ -35,6 +34,7 @@ export function SectionCards() {
           </div>
         </CardFooter>
       </Card>
+
       <Card className="@container/card">
         <CardHeader>
           <CardDescription>New Customers</CardDescription>
@@ -57,6 +57,7 @@ export function SectionCards() {
           </div>
         </CardFooter>
       </Card>
+
       <Card className="@container/card">
         <CardHeader>
           <CardDescription>Active Accounts</CardDescription>
@@ -77,6 +78,7 @@ export function SectionCards() {
           <div className="text-muted-foreground">Engagement exceed targets</div>
         </CardFooter>
       </Card>
+
       <Card className="@container/card">
         <CardHeader>
           <CardDescription>Growth Rate</CardDescription>
@@ -98,5 +100,5 @@ export function SectionCards() {
         </CardFooter>
       </Card>
     </div>
-  )
+  );
 }

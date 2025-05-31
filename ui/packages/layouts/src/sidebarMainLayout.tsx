@@ -2,7 +2,8 @@ import { ReactNode } from "react";
 
 import { AppSidebar } from "@repo/ui/components/app-sidebar";
 import { SiteHeader } from "@repo/ui/components/site-header";
-import { SidebarInset, SidebarProvider } from "@repo/ui/components/ui/sidebar";
+import { SidebarProvider } from "@repo/ui/components/ui/sidebar/useSidebar";
+import { SidebarInset } from "@repo/ui/components/ui/sidebar/sidebar-inset";
 
 export const SidebarMainLayout = ({ children }: { children: ReactNode }) => {
   return (

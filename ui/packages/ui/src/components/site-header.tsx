@@ -1,6 +1,6 @@
 import { Button } from "@repo/ui/components/ui/button";
 import { Separator } from "@repo/ui/components/ui/separator";
-import { SidebarTrigger } from "@repo/ui/components/ui/sidebar";
+import { SidebarTrigger } from "./ui/sidebar/sidebar-trigger";
 
 export function SiteHeader() {
   return (

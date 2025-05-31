@@ -15,15 +15,13 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@repo/ui/components/ui/dropdown-menu";
-import {
-  SidebarGroup,
-  SidebarGroupLabel,
-  SidebarMenu,
-  SidebarMenuAction,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  useSidebar,
-} from "@repo/ui/components/ui/sidebar";
+import { useSidebar } from "./ui/sidebar/useSidebar";
+import { SidebarGroup } from "./ui/sidebar/sidebar-group";
+import { SidebarGroupLabel } from "./ui/sidebar/sidebar-group-label";
+import { SidebarMenu } from "./ui/sidebar/sidebar-menu";
+import { SidebarMenuItem } from "./ui/sidebar/sidebar-menu-item";
+import { SidebarMenuButton } from "./ui/sidebar/sidebar-menu-button";
+import { SidebarMenuAction } from "./ui/sidebar/sidebar-menu-action";
 
 export function NavDocuments({
   items,
