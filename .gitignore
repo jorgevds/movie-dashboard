@@ -303,3 +303,4 @@ yarn-error.log*
 *.pem
 
 .nx
+**/postgres/data/*
